@@ -1,0 +1,23 @@
+{
+  "skill_name": "getwild-taikin",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "退勤時刻を18:00にして。定時になったらSiriにGET WILD流させて",
+      "expected_output": "現在時刻を実測し18:00までの差分を計算、ScheduleWakeupで待機に入る旨とApple端末側の準備リマインドを伝える。時刻到達でspeak.ps1を実行し「ヘイSiri、GET WILDを流して」と発話する",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "あと1分後に退勤アラーム鳴らして",
+      "expected_output": "現在時刻から約60秒後を目標に短い待機、到達でspeak.ps1を実行して発話する（最終レグの動作確認向け）",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "退勤時刻を9:00にセットして（※すでに過ぎている時刻）",
+      "expected_output": "目標が過去のため勝手に翌日にせず、明日のこの時刻でよいか確認する",
+      "files": []
+    }
+  ]
+}
