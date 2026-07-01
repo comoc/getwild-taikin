@@ -29,6 +29,30 @@ getwild-taikin/
 └── README.md
 ```
 
+## Claude へのインストール
+
+Claude Code の**ユーザースキル**として登録すると、どのプロジェクトからでも使えます。
+`~/.claude/skills/` 配下にこのリポジトリを置くだけです（`SKILL.md` がフォルダ直下に来るように配置）。
+
+```bash
+# ユーザースキルとして clone（推奨）
+git clone git@github.com:comoc/getwild-taikin.git ~/.claude/skills/getwild-taikin
+```
+
+Windows（PowerShell）の場合：
+
+```powershell
+git clone git@github.com:comoc/getwild-taikin.git "$env:USERPROFILE\.claude\skills\getwild-taikin"
+```
+
+特定のプロジェクトだけで使いたいときは、`~/.claude/skills/` の代わりに
+そのプロジェクトの `.claude/skills/getwild-taikin` に置きます。
+
+インストール後、Claude Code を起動し直すとスキルが認識されます。
+配置を確認するには `/skills`（または起動時のスキル一覧）に `getwild-taikin` が出ていればOKです。
+
+> パッケージ版 `.skill` ファイルを使う場合は、その `.skill` を Claude 側のスキル取り込み手順に従って読み込んでください。
+
 ## 使い方
 
 Claude Code に次のように話しかけると起動します（スキル名を明示しなくてもOK）：
