@@ -1,4 +1,4 @@
-# GET WILD 退勤アラーム
+# GET WILD 退勤アラームのスキル
 
 設定した退勤時刻になると、PC の音声合成(TTS)で **「ヘイSiri、GET WILDを流して」** と発話し、
 近くの Apple 端末（iPhone / Mac / HomePod、Hey Siri 有効）にそれを拾わせて
